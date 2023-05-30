@@ -2,12 +2,14 @@ const todoInput=document.querySelector(".todo-input");
 let todoButon=document.querySelector(".todo-button");
 const todoList=document.querySelector(".todo_list");
 
+todoButon.addEventListener("click",addTodo);
+todoList.addEventListener("click",supprimer);
 function addTodo(event) {
     event.preventDefault();
     const todoDiv = document.createElement("div");
     todoDiv.classList.add("todo");
     const newTodo= document.createElement("li");
-    newTodo.innerText="Bonjour";
+    newTodo.innerText=todoInput.value;
     newTodo.classList.add("todo-item");
     todoDiv.appendChild(newTodo);
     //bouton check
@@ -17,14 +19,21 @@ function addTodo(event) {
     todoDiv.appendChild(completeButon);
     //bouton delate
     const suprimerButon=document.createElement("button");
-    suprimerButon.innerHTML='<i class="fa-solid fa-trash-xmark"></i>';
+    suprimerButon.innerHTML='<i class="fa-solid fa-trash-can"></i>';
     suprimerButon.classList.add("supprime-btn");
     todoDiv.appendChild(suprimerButon);
 
     ///dqvdqvdqvd
     todoList.appendChild(todoDiv);
     todoButon.addEventListener("click",addTodo);
+    todoInput.value="";
 };
 
+function supprimer(e){
+    const item = e.target;
+    if(item.classList[0]==="supprime-btn"){
+        const todo=item.parentElement;
+        todo.remove();
+    }
+}   todoInput.value="";
 
-todoButon.addEventListener("click",addTodo);

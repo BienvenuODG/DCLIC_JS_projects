@@ -28,3 +28,37 @@ form button{
 form button:hover{
     color: rgb(0, 0, 0);
 }
+
+.todo_containair{
+    display: flex;
+    justify-content: center;
+}
+.todo_list{
+    list-style: none;
+}
+.todo{
+    background-color: aliceblue;
+    color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 240px;
+    height: 30px;
+    margin-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.todo .complete-btn{
+    margin-right: 5px;
+}
+
+.todo li{
+    flex: 1;
+}
+.fa-trash-can .fa-square-check{
+    pointer-events: none;
+}
+.supprime-btn{
+    background-color: rgb(255, 255, 255);
+    padding-left: 5px;
+}
