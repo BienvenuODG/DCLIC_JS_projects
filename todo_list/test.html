@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>ToDo List</title>
+  <style>
+    ul {
+      list-style-type: none;
+    }
+    li {
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Ma ToDo List</h1>
+  
+  <form id="todoForm">
+    <input type="text" id="taskInput" placeholder="Nouvelle tâche" />
+    <button type="button" onclick="addTask()">Ajouter</button>
+  </form>
+  
+  <ul id="taskList">
+    <!-- Les tâches seront ajoutées dynamiquement ici -->
+  </ul>
+  
+  <script>
+    function addTask() {
+      var taskInput = document.getElementById("taskInput");
+      var taskList = document.getElementById("taskList");
+      
+      var task = document.createElement("li");
+      task.textContent = taskInput.value;
+      
+      taskList.appendChild(task);
+      
+      taskInput.value = "";
+    }
+  </script>
+</body>
+</html>
