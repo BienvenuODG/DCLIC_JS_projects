@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="contenair">
+        <div id="titre">
+            <h1>Mon blog static en JS</h1>
+            <button class="add" id="add">Add</button>
+        </div>
+        <form class="form" id="form">
+            <input type="text" name="title" id="title" placeholder="title">
+            <textarea name="description" id="description" cols="30" rows="2" placeholder="Entrer le contenu de l'article"></textarea>
+            <input type="file" name="image" id="file">
+            <input type="submit" value="submit" class="envoyer">
+            <input type="button" id="close" value="close">
+        </form>
+    </div>
+
+
+    <div id="posts"></div>
+
+    <script src="java.js"></script>
+</body>
+</html>

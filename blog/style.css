@@ -1,0 +1,72 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+/* --------formulaire-------------- */
+.form{
+    /* visibility: hidden; */
+    background-color: blue;
+    position: relative;
+    height: 300px;
+    width: 300px;
+    margin-left: 33%;
+    margin-top: -50px;
+    padding-top: 20px;
+    border: 1px solid white;
+    border-radius: 15px;
+}
+.form input{
+    display: flex;
+    margin-left: 13%;
+}
+.form textarea{
+    display: flex;
+    margin-left: 13%;
+}
+.form #title{
+    margin-bottom: 5px;
+}
+.form #close{
+    float: right;
+    margin-top: 130px;
+    margin-right: 10px;
+}
+.form textarea{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+form #file{
+    margin-top: 10px;
+}
+form .envoyer{
+    margin-top: 10px;
+}
+
+.contenair{
+    background-color: orange;
+    width: 100%;
+    height: 500px;
+}
+.contenair #titre{
+    position: relative;
+    margin-left: 40%;
+
+}
+.contenair .add{
+    width: 80px;
+    height: 30px;
+    background-color: rgb(0, 17, 255);
+    margin-left: 100px;
+    margin-top: 50px;
+    border-radius: 10px;
+    color: white;
+    font-weight: bold;
+}
+.contenair .add:hover{
+    background-color: white;
+    color: orange;
+    transition: 0.8 ease;
+    border: 1px solid black;
+}
+/* --------formulaire-----Fin--------- */
